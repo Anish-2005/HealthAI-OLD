@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c8e6c9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+        }
+        .login-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 20%;
+        }
+
+        .login-card form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .login-card form input[type="text"],
+        .login-card form input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+        }
+
+        .login-card form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .google-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: large;
+            border-radius: 10px;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        input{
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: #4A7C1A;
+        }
+        label,p{
+            font-size: small;
+            padding: 10px;
+        }
+        #sub{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: larger;
+            border-radius: 10px;
+            background-color: #203809;
+            color: WHITE;
+            height: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <h1>Sign Up</h1>
+        <form action="/submit-login" method="post">
+            <button class="google-btn">
+                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google Logo"><b> Login with Google</b>
+            </button>
+            <input type="text" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm-Password" required>
+            <label><input type="checkbox"> Remember me </label>
+            <button type="submit" id="sub"><a href="index.html" style="color: white;">Sign Up</a></button>
+        </form>
+    </div>
+</body>
+</html>

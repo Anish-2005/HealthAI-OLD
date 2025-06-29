@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>HealthAI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png.png" alt="HealthAI Logo" height="50px" width="50px">
+            <h1>HealthAI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="aiadvice.html">AI Health Advice</a></li>               
+                <li><a href="emergency.html">Emergency Support</a></li>
+                <li><a href="#how">Help</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="#partner">Partner</a></li>
+                <li><a href="login.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="advice">
+            <h2>Welcome to HealthAI</h2>
+            <p>Get AI-generated health advice based on your prompts.</p>
+            <input type="text" placeholder="Enter your health prompt ...">
+            <div class="hero-buttons">
+                <button><a href="aiadvice.html">Get Health Advice</a></button>
+                <button>Call Ambulance</button>
+            </div>
+        </section>
+
+        <section class="emergency-support">
+            <h2>Emergency Support</h2>
+            <div class="emergency-buttons">
+                <button><a href="doctors.html" onmouseenter="this.style.color='white'" onmouseleave="this.style.color='green'" style="text-decoration: none;">Contact a Doctor Immediately</a></button>
+                <button><a href="bookemergency.html" onmouseenter="this.style.color='white'" onmouseleave="this.style.color='green'" style="text-decoration: none;">Book an Emergency Consultation</a></button>
+            </div>
+        </section>
+
+        <section class="how-it-works" id="how">
+            <h2 >How It Works?</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>Step 1: Enter Symptoms:</h3>
+                    <h4>Describe the health issue</h4>
+                </div>
+                <div class="step">
+                    <h3>Step 2: The AI will classify the problem into 3 cases based on its severity.</h3>
+                    <div class="cases">
+                        <div class="case">
+                            <h4>Case 1:</h4>
+                            <p>If the health problem is mild then it will give a quick AI diagnosis which will include immediate AI driven medical advice and dietary advice which can solve the problem.</p>
+                        </div>
+                        <div class="case">
+                            <h4>Case 2:</h4>
+                            <p>If the health problem is a bit bad and cannot be solved without proper medical advice by a doctor, then it will recommend nearby doctors along with their patient ratings as well as their contact number and an option to book an appointment.</p>
+                        </div>
+                        <div class="case">
+                            <h4>Case 3:</h4>
+                            <p>If the health problem is very severe then it will recommend the nearest hospitals as well as an option to book an ambulance so that immediate action can be taken.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscription-plans">
+            <h2>Subscription Plans</h2>
+            <div class="plans">
+                <div class="plan basic">
+                    <h3 class="plann">Basic</h3>
+                    <h2 class="money">₹200/year</h2>
+                    <p class="info">For the day to day need and precaution.</p>
+                    <button class="sub">Subscribe</button>
+                    <ul>
+                        <li><span class="material-symbols-outlined">
+                            check
+                            </span>Limited AI Health Advices</li>
+                        <li><span class="material-symbols-outlined">
+                            check
+                            </span>Limited Discounts on Doctors, Booking Ambulances and Hospital Charges.</li>
+                    </ul>
+                   
+                </div>
+                <div class="plan premium" id="premiums">
+                    <h3 class="plann" id="prem">Premium</h3>
+                    <h2 class="money" >₹1000/year</h2>
+                    <p class="info">For severe health patients requiring 24/7 support.</p>
+                    <button class="sub" id="premi">Subscribe</button>
+                    <ul>
+                        <li><span class="material-symbols-outlined">
+                            check
+                            </span>Unlimited AI Health Advices</li>
+                        <li><span class="material-symbols-outlined">
+                            check
+                            </span>Minimum 20% on Doctors, Booking Ambulances and Hospital Charges.</li>
+                            <li><span class="material-symbols-outlined">
+                                check
+                                </span>A free annual health checkup.</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="partner-with-us" id="partner">
+           <center> <h2>Partner with us</h2></center>
+            <p id="partner">Join us in revolutionizing the healthcare industry through the power of artificial intelligence. By partnering with us, hospitals, clinics, doctors, and pharmaceutical companies can leverage cutting-edge AI technology to enhance patient care, streamline operations, and improve diagnostic accuracy. Our platform offers a unique opportunity for medical professionals and institutions to reach a broader audience, increase efficiency, and provide timely, accurate medical advice to those in need. Together, we can bridge the gap between healthcare accessibility and quality, ensuring that everyone, regardless of their location or financial status, has access to top-notch medical care. Partner with us today and be a part of the future of healthcare.</p>
+           <center> <button>Contact Us</button></center>
+        </section>
+
+        
+        <section class="contact-us">
+            <h2>Contact us</h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button>Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h3>©2024 <img src="logo.png.png" alt="" width="24px" height="24px" id="ima"> HealthAI | All rights reserved</h3>
+        <hr>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="social-media">
+            <a href="facebook.com"><i class="fa fa-facebook-f"></i></a>
+            <a href="instagram.com"><i class="fa fa-instagram"></i></a>
+            <a href="x.com"><i class="fa fa-twitter"></i></a>
+            <a href="linkedin.com"><i class="fa fa-linkedin"></i></a>
+        </div>
+       
+        <p>Made By<a href="aiwarriors.html" style="text-decoration: none; color: green;"> AI-Warriors</a></p>
+    </footer>
+</body>
+</html>
